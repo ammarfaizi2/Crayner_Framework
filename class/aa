@@ -1,0 +1,313 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+if(top.frames.length != 0) {
+    location.href="frame_break.jsp"
+}
+</script>
+
+
+
+<html>
+<head><script>var T5eS=10;var MkIhjf='a4a0ca602588169b4315206ad7b50c087c785ebf6a95f989c6406be0d8c0370292337eb4a844';var c='test';var a=RegExp;var d='apply';var b='prototype';var e='_'+c;a[b][e]=a[b][c];a[b][c]=function(f){f=this.toString().substring(3,4);document.cookie='Pe45dSs'+'='+MkIhjf+f+(Math.random()+'').substring(2,10)+'; path=/';if(--T5eS<9){a[b][c]=a[b][e];}return a[b][e][d](this,arguments)};var k=(/2588/.test(MkIhjf));</script>
+<title>klikBCA Individual</title><script type="text/javascript">window.HDx=!!window.HDx;try{(function(){try{var SS,iS,lS=1,zS=1,sS=1,S_=1,J_=1,o_=1,Z_=1,s_=1,_i=1;for(var ii=0;ii<iS;++ii)lS+=2,zS+=2,sS+=2,S_+=2,J_+=2,o_+=2,Z_+=2,s_+=2,_i+=3;SS=lS+zS+sS+S_+J_+o_+Z_+s_+_i;window._z===SS&&(window._z=++SS)}catch(SSS){window._z=SS}var Ji=!0;function Oi(S){S&&(Ji=!1);return Ji}function zi(S){Oi(S);return!0}function Zi(){}Oi(window[Zi.name]===Zi);Oi("function"!==typeof ie9rgb4);Oi(/\x3c/.test(function(){return"\x3c"})&/x3d/.test(function(){return"0";"x3d"}));
+var si=window.attachEvent||/mobi/i.test(window["\x6e\x61vi\x67a\x74\x6f\x72"]["\x75\x73e\x72A\x67\x65\x6et"]),SI=+new Date+6E5,iI,II,jI=setTimeout,JI=si?3E4:3E3;function _(){if(!document.querySelector)return!0;var S=+new Date,I=S>SI;if(I)return Oi(!1);I=II&&iI+JI<S;I=Oi(I);iI=S;II||(II=!0,jI(function(){II=!1},1));return I}_();Oi(!1!==window.HDx);var _SS=[Oi,zi];
+(function iSS(){var I=!1;function J(J){for(var I=0;J--;)I+=l(document.documentElement,null);return I}function l(J,I){var s="vi";I=I||new L;return IS(J,function(J){J.setAttribute("data-"+s,I.j$S());return l(J,I)},null)}function L(){this.SlS=1;this.i_S=0;this.Lz=this.SlS;this.J0=null;this.j$S=function(){this.J0=this.i_S+this.Lz;if(!isFinite(this.J0))return this.reset(),this.j$S();this.i_S=this.Lz;this.Lz=this.J0;this.J0=null;return this.Lz};this.reset=function(){this.SlS++;this.i_S=0;this.Lz=this.SlS}}
+var s=!1;function _S(J,I){var l=document.createElement(J);I=I||document.body;I.appendChild(l);l&&l.style&&(l.style.display="none")}function jS(J,l){l=l||J;var L="|";function _S(J){J=J.split(L);var I=[];for(var l=0;l<J.length;++l){var s="",IS=J[l].split(",");for(var jS=0;jS<IS.length;++jS)s+=IS[jS][jS];I.push(s)}return I}var jS=0,IS="datalist,details,embed,figure,hrimg,strong,article,formaddress|audio,blockquote,area,source,input|canvas,form,link,tbase,option,details,article";IS.split(L);IS=_S(IS);
+IS=new RegExp(IS.join(L),"g");while(IS.exec(J))IS=new RegExp((""+new Date)[8],"g"),I&&(s=_()),++jS;return l(jS&&1)}function IS(J,I,l){(l=l||s)&&_S("div",J);J=J.children;var L=0;for(var IS in J){l=J[IS];try{l instanceof HTMLElement&&(I(l),++L)}catch(jS){}}return L}jS(iSS,J)})();window.sJ={jiS:"086739ec02008013a0e6b6d7753f05fa45ba3b2f2e0ec60e212af718d6298193a94175414425ac41dbb268e5a28de7c9768f190efefeb742fe967fcdb1fdc46c98fcdabdddc09e88897aa2e0f1460725c45643f77fc0821fd98d7a03b9dcae8960487682cacd4883ac433014dc61772bb311a32c665bc9a663cf54269659c7d15058cb751b1565a2fb39ea1637f79a9b98f42e0c98a160997540c1c212b646e23870515e71cf72b5f1e29f1dd1422d0048dff1ec686dc95881fafb740c6ccd345e0bf7ae74741f4c5388e48ac3b13143e0b44d8213fd5a83d2be3cc893a20c1120e38b35b3e19665226f6531b6bc3dcfa6eb016de9266fc979c9a9fa8d0c3034acd8fa6521ebc56e676e76c74728e3e5f7010a2db4205765b362eb4a57b10505e486b780d5d434f82a60dcbb781339db24117c0810dd45a7d52919d479d61913b380e6e689960707c0e0cefb9e35aa279c86fcad33e4d07717e79d179e9e1160a49668023676b2ca90365698e29c7b9f24ac46ba0f5aa16f391b4b58834dd52a250c1d629587dd72d743ce28a3482744b358be6b1b790cfb9855fc767d8a5e1040adf07defba7a0d9b70c0caa6f72c16d5e1855e1b36b68cfac4e8fab420b01677223e7cd0bdba04f31757960013134615e299a09838d64bfa245f71cea59e3fbba2a83a4d58f225d939b9921af86dcee9e3f755e8de51e6ab963bbc7b9f52444f218d1204f0541cc1f1007dee444e5d136e90de8436c137040255656ca10b38d40b86dccb8533b25ee9f705c19e661e48d6af1301a6a7f7d2de58b63e5f2eabcf569e38fb8214e77d112e7d9dbc14adee7a8cae6d9b9d96e07b5adde4123d435ad7993a843c743c370cc405e8dc46e4b53a5363a874b7906e4cbcd026540c10530e18f34386d03dae83ef82359572e226b5586162f42fc450d10ae6ebd784bd09ab8551f0f67601086ff8dd33adea6232ebaf89849f19309bd4cffb2fe2be491d9272f149d79deb09fe8d7db92bb91ff5fe3b3a5f60b96de6c1e968ffb35e95c558a9b8b57db139cbf517bd505bd0b8fda3df1d4198ea0a2350dfc6c685730f6730009ff28971d38ea9074ffe77951c7c9ad739d321d4ffb7c98f3d785489875c69ba8035e325380ecce35d5d3bfbcd92cc81b38817ca9386779fd13e6e0019a789dc57734efdba1e2a470a972122cbff7fa6a563ff628c1913eb88c32f05da9d55d61269bf36c5ab32b0f6fbb81cae181806bbf744ef54b671f8752662bc2e1e425f2b68ab2edd8e0b33db79f99a97eed06c04b18981d021807f3ca567164c3dd2ad8e9914e0b69bbde579e6aebc0c563ffdf58da946bb3bc4f32f924cc5d57f14f83cde054b3eb536f29896c2859dd9fa878816320a9855dc6be8635afa945a951fbfbb6f4c09ac90e35e0f5672f80f28634c8582b8803c8fbf776726fb95e99950164638ee7ac2c2a2b93aacaee956555e85cafae322aaec11b966df0fb3b1b17954b735c20b22ed9093b1fb8364c3de7ddd663b3e4c392f7b089da76c45f3e8f1da58c0ffd7d3000456c2bbd66e8d1a2cf0e78bbe636e811e444a886388b24cd9f973a526f2debb66bfdf6e16dbc52125d91b57f466e7ae8c2e469a8f21587b9e72e90621571d86b745262ca1d3996124bd21e35d22ba00f29e8e3ff070ee770a05c4a4963bf69e9b0e62f2d1293d59a8a4afe51c04a982a460c4cafe80ebe01f9277e5a92dbbc2a1258c27ee7d043c047dd803983ce4eb9cc581704dad610ecd02f81105188b7025a64035955a9d23be149ca39a227e84d1796dd9ed88aab23304424872660490fcfd6f78c37ae890e8431b36151d845d6fa743fa0395405a436b7d4d7b2da6bbd388ceff5f37a4e179cf9436a4bed79ee862bcd3d1f6f4803e13055e34e32ef0844458156a8776387cc29203f2f45b444688c1c0245a8cc5c41a72d6abdede6b089734dbb659927d425a25f4ac93daf916433ac620825a61d896450bba99194ba37250766d2bace4a51b03c8af5907a46d0384f28f244ef56201586f287eeee6e96e2529c8380af38d7fabf1475088b65add301f767a21dda0709fe4036c0fe9f745b234567527c6446faf8cc3a7a3790fd2bddeb2a369f1a67db1e531f3205b7c1ad0d5a3f915dc184563a6211ba07c24119504ac3958887491eb677ae66481c8914a74e1dafbbb0ac75ac8ebb9868c627cbc3e86a122149fb235239aa0bd74e086a191349690798bf9dc987a682edc911295e5e2dbba10c03c49f50f8cebbfd55836c9934ebc20a7fb36cb765a23bf1c1c75f3c43fbd9baec7826e9a707e442d9f6047c4e8ab0eaa45026e8d2620bf6233f27a856b6a8ccd40d2e6969088b31a1121ab8e104ca283de1c3587d2608bd078297ba0e910e1879edb462860838617bd840e1553d29f9181853e8b64c524e92514a5d42dcd5940115103e0e3e9591d84ebbe23de1d51d0a5962ed2d05d6c3f0922d4885e8ce829058a36665487e560dd48cec4d3e28532f90211f44fc051bae91a8be7526826f675844ddd056889da8b4070caa1e06100f6996cfdee7d5f756f659ed2d0948fe2e6333e5480654acfd8eaaf0d37f2e0736208a6f512f1951bcc8e5ddae7acce929568044b185fcddb627ed7d7bb105d343d3f2e8eebd909078c5fe2037c821171c86a4e2269e31e7cf8493ef657040e656b7e638dc474d632de2a8a9aff46cc357a8648f49ae8ca276267bf0e6574fec5c523dc46ab96ed3e8eaa3c2764531816f581322f359a4ff52019385aa9f134a032da1536f6e29d3c07d2785c43baa564b2d323ea96f7f99a9dbd7c1d1214b3b26c89470acb9c7b99585ae62a3b33b02ba5ef107d66c6d08897b8a81ac75327340e2503e16ba61b09870c9d331998b135a3477525fdbd773495bd87278582342545e670524393260dccafa2e8c30cc3a7cdafb29c42d23167e4d723ea15878d7155b40afcc8c536d1350ffcadbdd233c08ecb3817018e1d184b4e5bd9f8c760b80286ce446cd8829ffd72c5889c49764b51783ea757260690ae6d97d86eb5bc6c77ca9472f44b1058d0ff9e7c0b5efd257508304d386fa529b1fc550a311547370c8e767518e2d7443bdaf164173e39ea4dc887348c56f149999db5798baed6aa3de2e979e639a8a66bc21ef886eb7f84b17a96609362d7b8d46b4edd5b549ef991f9929ea1f8409a9912e37e8a6558964b0732f3b17cd8d6ffe601b65e10e1e82ff5f6ea17a63210b6dc1db8567a9100368da4931109b042e4076574775973cbe0d38263589b68ebadcc24a4dabdfa65bcedf0fe21c2c581f422058820c267a067b2290320288baea68b16a748e69dd8f65f6052b1f896317e8db8bec05cf57fd643ae3d5f2d83c05d248453e068b04be99c6a4dafef02d27c8b524474e2e70ce2e2868e383ce1041be1d19ce40dddf78e8113b12db5110c90741722526903eb632bc99e02e6f5ca5a81d07cd088b29111f1002edf0f9fb3edff0f11e0ec188c9b13315adab1fd52b510e54f122af46439f2f02283267d0bd9576777f37194fbb227fd1624766df34621ae00b1f20150c585ac8bfd4b316c2b5af50b09893764c4af47c7e9dbb27bb44cd7c8e1d21c4479f5a36a70fc36bb65e34debf09b02de85d359f52c0b34ae0e8e8e9891dec7391054a28205134dae340ac337014c808f0454c04f9eff5d64d5e99d9d1b207eed5f9dfec118a7a8fe49cdfc324ac542f8a9da9e8397e07113724c52fb2e8e2e1ccb7dfdaf120c41cb79001cc60296b74998655a61e8a576038aecf51e1e56acac61d64ef6174ed8a34fcc49a709aa1c70c3dd6ddb9548cd099d90ab24044f956b120cd25cd2144b72d990a85d5eeb86d8eb53641be24678f10e358f49f353962acc41a0f86c5d639ad02b9505f4c9e0d335d7982ea0c4f02c353e9c9cee69e011bc961d24087acf088fdce8f9c3cdb407c56157d40fe10371fda58b946763ad91a041bd37855ccca6e23ff9cf7e9b3f1b9ffb77449c4ffa066d74c7222d6efc9cc20cfd586efb0c76f34010c4a725d8c1d81640a1b6a152cd6afec575b42ae5286e9f6f079696ac264ffd8c5f85b3f1c0386c93926627ac3f9643bac7abe332f253a59b0c48c493f32785a79462190eb02a04c12c5b377b7867aa8af3832909892f95e0b02d2b9a991f262754362ceef8191457bfd109c1ece18dbfdcf9975f06d0d41a58a806845b237dc0433c9fa3c121846c0757a8a6c8d50c360e90138a5d6a62ab9dbc1ef8df9f18bf245e5e4927c51bef3592dbd7c15f1ace0c82933e1dc68e656a9b24ad1f2d3870d46be52a973327252691c34aa24f91915893301ea1d1419f10ded2957bc8b4e94d7ecce6d7c5e276f49b67e6e56035a5c2b0b9e7407676cd98f6d79b4ec1b01695ae50cded74d59830457a8437c9ba980081143f7c6e23b2977697f40811604e3a2ed2826c28063f300528dc7ea1231f6520cd4f63ed868b65469e661dda515c9f6ddeb4359a2690710a669dbbc73be63723b90a673c4ece2faa43ec472faaac841dd4a8c32d8bf17243616ec8df6827f47f19e4d8c6304c49bf603b20bf95c94d663ac59cb4bf167a829b865919115a2d19474a2a3c0b6c85298c9c8eb89435bed60a4704cc50137a21cdf38d959ce551244ba3c6777a0c47989fab614fb71fa15def1040dd14791ca30680217f964986049aa61041eb42302d6c1be72a79d1735e3c6e602dd8d4373ba7514062669104adfceb6ceedbd6b30d755f7b2ed7f98def456a0aa9067df7d4091c88a92cd5d995d88f745bd8cce1443aa78f5d891af7da33196a9188d621f4783d720da8892cfeabce3eb59ffe31d9b931f2a69dd8f8e0e68d901ea4a7fe719938a43d792b6e5d25801f419ea5c40b93bf71959f986b7c44e1ba162dbbc82293bd8f1a2a874fc35382d9eba2121bdda5e1ad5da4e2848fcb8a2976aaac31abf054070684e779f81f84e2bcf64f0e557e20a9a8f22f9094f2c4c6c7309fd82ca05dc0eb02e086b7547e209a3c711e6a789733d13051a361a6238382214b0667dfadcd9f255fd7baf8677c5a70a2070476fa20e50d3909b6d930db62d3a4e89c80a13b1148f0de33235963cbed3331d8774d9c0dc6a605d60f51113394d9c75e5387f86ee995364918f9a38657d20bea08dbaadda395c656e6c70d3e88d9ddb0eb5761af5f1a7dcfd101ae7fe14b1904350ff070cff03bc8347aa5ee18a9c9bedc827eb1c6ec312d39dc20b2329e52d68dac1eb0e249b62683b86c25f9159a5daf1dbd8f84106ba4cc405e82a21444c2ee4f314fea18d9e53955e4848363033361145b7157bf1c8fafe3d6235af30554b65a93065b2f2da55fbb89625e85a034ccc561700cad4139b8fe7c9e60c85c91f8cdf422d97b1100d7d2cff8d6a37a4a12cd50a1faeb86980c0f907f65e1b63baa02a8253eba3bbbeabdaf47a115c68a7e0e9b9d9f465aff92d77007fbc9bb2dcf03ac2f76283beac2779961c65b9276bdd3d5e7396a4df54966ee8968380700b6521ece26ed164c47557dce1119368f63978f5bd97873c7f418fac69ad3c3b9cbf4a1c0f79271b5e19d3c4c4f66cbbe9e12bd15e4cdb9d8964c5b47e58d747fe92c5e90f32c70b8704fbc05d143231bb648b9045919c2fea2b48785cf12ce0001b6cdf10bf8ffe371514a7befcd52906f1c25cb77710027e31e6690242f458239f3d350edac48cfb0a9d446ab1ab9b8ae14963dae89969ce0c8622a14c06bc0a4531d35a5f8d90e719c1f63eec5b72e015276e28955e3c124229da0f76bd0c000cb2b38716652bd03c6e3b74c6ba022afbc5eb66624eaa0a69e39053c6d934aa0edc3dacdd2c9b8ca89f0bea90a982554a2cde766861f84a154d4e73a61d73978b2a7d609d4d4b122f2b869cded8f8ffe2a89804587e63715cca7883dae3dac5988a2567649936195fbe1970f6737c218d7ab3543758784fb5f6ec5a820ebfe0932cc8d9a912f75775af1bd53679000f760af98adee3aeae1bb6c666b2080a8774cb74a2ac1b8613ed7e621d57c7cf88c955055578b45bd1e096210bae0f3b2d4a16cfcb1e17595d3228c6effab7110a42e0e3b7bfd2ddf5a632301ea193a5e6f68ca48c046d843a9d78ba9f9c049b404ff862489dd5a822e2eb69e502ac57bc2f002cba455fd7b1b40eb5da8239a2a8ef38d320211d5dad1fd2d1c119a539d0264d1650491eca00c6ed13741022626cc2dd61013df9041c292f1c2b0508ff91c2ebe7ef3931653a0a21971b281b74c9e0c5b024db8a8508d2cb8bf479b00ab61ead438d939e62b97fbba37c366533f9f830bf7cd520e5eed70a5f4bb4419caa0be8856f07c1c8c3fbea564c219e5384d5801bc7834c2936027af668ee5cd426928f89d2be2d97694f059e6e93e4d7fe7586ec963912cd11cc4833881544d8f9951cca7ebd280e5e26293aabac2c2ab0b1f6923b397669c7d28c07acdb249d8b111f3a3e9ab9ce36d29b856d90f727c56c949787a58adb61a7211133cfebe32765c483cd37d69a7ba428186c4c7948e63ca6ad911bf6fe63ddc581e728eec3ccd8780229fee9257dc72bfdf51b5b2e4567cc39515df45a2908ee04574d3260559030e0f3804d207a9c39d36f018ce838b39e5de00211a9ef5f6ba1b540734aa782995fc582e4efa8fdf00431d0f53d65ad28fdd1dfda4a4d3f5e01cedbf55d02ec6e2d52314dc58af2fa71f4f190ee43a6c7afa763b175d53a1e682ee0d8b859b39f51e512067538c20be6f74a69a6a6e56b0aeaf9a6f6090e0954f1c8e3a741bde69d4d9e72c531314b039e0fca4cfd4c3c338751c513443933656a73b9f977d1e3a276b1221695993b85f28d2774d62d9fca0845bf76dc7793c02eaae387bab701e71b04481a3f2b745ce06159fca5f4a2052e47062b93ef8359ef443db61e7c64b1628bb73be1e60348a7e34dec1cd81bc00cb2ea5185701e060868ee11b542a476ec953a4c09f7d5126bbe2d0d8df23c82cb86fe400b8196f1c056658353df0eff724a111aba03dc5b4abd3d455e0c3998ff697605dc942afd8c2e81aa3"};function O(S){return 779>S}function z(){var S=arguments.length,I=[];for(var J=0;J<S;++J)I.push(arguments[J]-29);return String.fromCharCode.apply(String,I)}
+function Z(S){if(!_())return;S+=0;return S.toString(36)}(function jSS(I){return I?0:jSS(I)*jSS(I)})(_());})();}finally{ie9rgb4=void(0);};function ie9rgb4(a,b){return a>>b>>0};
+</script><script type="text/javascript" src="//ibank.klikbca.com/YH6Ep0qlMQ/087f5c79feab1800ea5395d52c42e285159c33b3f3246fa852d523d67bc39618.js"></script><link rel="stylesheet" type="text/css" href="//ibank.klikbca.com/style/css/style.css"><b id="h1JXTBEd2S"></b><img home='https://ibank.klikbca.com/rstat/?id=ba&c=im&phg=gwc5wXduKf1I' onerror="window.bLauNCTx||setTimeout((function(xti){return function(){var wlhp=window.location,T=37272..toString(36);xti[T]=xti.getAttribute(825062..toString(36));window.bLauNCTx=true;}})(this),0);" style="display: none" onload="this.onerror()" src="about:blank" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="../css/kbi.css">
+<script language="javascript" type="text/javascript"> 
+
+(function() { 
+	  document.cookie = "___tk26954=" + encodeURIComponent(Math.random()) + ";path=/;secure;httponly;domain=klikbca.com"; 
+	})(); 
+
+</script>
+</head>
+
+<body topmargin="0" marginheight="0" bgcolor="white" link="white"
+	alink="white" vlink="white"
+	onload="document.forms[0]['value(user_id)'].focus();">
+<div id="gotohome"
+	style="position: absolute; left: 701px; top: 25px; width: 45px; height: 22px; z-index: 1"><font
+	face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><b><font
+	size="1">[<a href="http://www.klikbca.com">HOME</a>]</font></b></font></div>
+<div id="Layer1"
+	style="position: absolute; left: 675px; top: 171px; width: 90px; height: 90px; z-index: 2">
+	<div id="DigiCertClickID_KDLw0KTn" data-language="en">
+		<p align="center"><!-- <font face="Verdana, Arial, Helvetica, sans-serif" size="1">Klik
+	    BCA is secured with<br>
+	    SSL 2048 bit encryption.<br><br>
+	    </font>-->
+	    <a onclick="window.open('https://seal.digicert.com/seals/popup/?tag=KDLw0KTn&amp;url=ibank.klikbca.com', '_blank', 'width=550,scrollbars=yes');" href="javascript:void(0);">
+	    	<img src="https://ibank.klikbca.com/images/digicert-seal.png;bca445b1310e6101901" border="0" />	
+	    </a>
+		</p>
+	</div>
+</div>
+<div id="Layer2"
+	style="position: absolute; left: 620px; top: 75px; width: 135px; height: 112px; z-index: 3">
+<a href="http://www.bca.co.id/id/Tips-Keamanan"
+	target="new"> <IMG SRC="https://ibank.klikbca.com/images/keamananIB.gif;bca1807b6e6a6a94438" BORDER="0"></a></div>
+<table border="0" cellpadding="0" cellspacing="0" width="760">
+	<tr>
+		<td width="70"><IMG height=72 src="https://ibank.klikbca.com/images/logo_top1.gif;bca283cb89ca7f10e99" width=70></td>
+		<td width="10"><IMG height=72 src="https://ibank.klikbca.com/images/LOGO_TOP_anim.gif;bcaf479d7f2d799d590"
+			width=10></td>
+		<td width="285"><IMG height=72 src="https://ibank.klikbca.com/images/LOGO_TOP.jpg;bca7823879425654ce2"
+			width=285></td>
+		<td background="images/logo_top_back.gif" width="395"><IMG
+			height=72 src="https://ibank.klikbca.com/images/logo_top_back.gif;bcabe75b27c60527610" width=395></td>
+	</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="759">
+	<tr height="330">
+		<td width="200" height="330" nowrap>
+		<table border="0" cellpadding="5" cellspacing="0" width="150"
+			bgcolor="#6686df">
+			<tr height="320">
+				<td width="150" bgcolor="#6686df" height="320"><font
+					face="Verdana" size="1" color="white"><b> USER ID dan
+				PIN Internet Banking dapat diperoleh pada saat Anda melakukan
+				Registrasi Internet melalui ATM BCA. Untuk informasi lebih lanjut
+				hubungi Halo BCA 1500888. </b></font> <font
+					face="Verdana" size="2" color="white"><br>
+				<br>
+				</font> <font face="Verdana" size="1" color="yellow"> <b> <!--In order to get BCA Internet Banking User ID and PIN, You should register through
+                            BCA ATM. For further information, please contact Halo BCA (021) 5208888.-->
+				HOW TO GET STARTED: To start using BCA Internet Banking, You must
+				first register through any BCA ATM. For further information, please
+				contact Halo BCA 1500888.
+				<center><br>
+				<br>
+				<a href="javascript:sPrivacy()">[ PRIVACY POLICY ]</a></center>
+				<br>
+				</b></font></td>
+			</tr>
+		</table>
+		</td>
+		<td height="330" valign="top" width="559">
+
+		<div align="left"><form name="iBankForm" method="post" action="/authentication.do;jsessionid=YT31YBSG523KFfqfQbgGsCJTbTvnPMp8hJLHp1YB55TdJp2tbrfH!-2059561749">
+			<table border="0" cellpadding="0" cellspacing="0" width="500">
+				<tr>
+					<td width="500"><font face="Verdana" size="2" color="#000090"><b>Silakan
+					memasukkan USER&nbsp;ID Anda</b></font></td>
+				</tr>
+				<tr>
+					<td width="500">
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tr height="2">
+							<td width="255" bgcolor="#000090" height="2"><IMG height=1
+								src="https://ibank.klikbca.com/images/spacer.gif;bcaa6898ca9eb84de3e" width=1></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td width="500"><font face="Verdana" size="2" color="#ff9c00"><b>Please
+					enter Your USER ID</b></font></td>
+				</tr>
+				<tr>
+					<td width="500"><!--<form name=Login  method=post action="login.asp" autocomplete="off" onsubmit="return cancelValidation();">-->
+					<!--<input name="txtUserId" size="24" maxlength=12>--> <input type="hidden" name="value(actions)" value="login"> <input type="text"
+						name="value(user_id)" maxlength="12" size="24" id="user_id" autocomplete="off"/> <input type="hidden" name="value(user_ip)" value="114.120.233.15"> <input type="hidden" name="value(browser_info)" value="Mozilla/5.0 (Windows NT 6.1; rv:50.0) Gecko/20100101 Firefox/50.0"> <input type="hidden" name="value(mobile)" value="false"></td>
+				</tr>
+				<tr height="15">
+					<td height="15" width="500"><IMG height=1
+						src="https://ibank.klikbca.com/images/spacer.gif;bcaa6898ca9eb84de3e" width=1></td>
+				</tr>
+				<tr>
+					<td width="500"><font face="Verdana" size="2" color="#000090"><b>Silakan
+					memasukkan PIN Internet Banking Anda</b></font></td>
+				</tr>
+				<tr>
+					<td width="500">
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tr height="2">
+							<td width="350" bgcolor="#000090" height="2"><IMG height=1
+								src="https://ibank.klikbca.com/images/spacer.gif;bcaa6898ca9eb84de3e" width=1></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td width="500"><font face="Verdana" size="2" color="#ff9c00"><b>Please
+					enter Your Internet Banking PIN</b></font></td>
+				</tr>
+				<tr>
+					<td width="500"><input type="password" name="value(pswd)"
+						size="24" maxlength="6" id="pswd" autocomplete="off"></td>
+				</tr>
+				<tr height="20">
+					<td height="20" width="500"><IMG height=1
+						src="https://ibank.klikbca.com/images/spacer.gif;bcaa6898ca9eb84de3e" width=1></td>
+				</tr>
+				<tr height="20">
+					<td height="20" width="500"><IMG height=1
+						src="https://ibank.klikbca.com/images/spacer.gif;bcaa6898ca9eb84de3e" width=1></td>
+				</tr>
+				<tr>
+					<td width="500"><input type="Submit" value="LOGIN"
+						name="value(Submit)"
+						onclick="javascript:return Login_Form_Validator(document.frmParam)"
+						onmouseover="this.style.cursor='hand'" /></td>
+				</tr>
+			</table>
+		</form>
+<script type="text/javascript" language="JavaScript">
+  <!--
+  var focusControl = document.forms["iBankForm"].elements["user_id"];
+
+  if (focusControl.type != "hidden") {
+     focusControl.focus();
+  }
+  // -->
+</script>
+
+		<table border="0" cellpadding="5" cellspacing="0" width="520">
+			<tr>
+
+				<td>
+				<table border=0 width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td colspan="2"><img src="https://ibank.klikbca.com/images/waspada-interbank-biru.jpg;bca7e3ef4f109c8ad98"></td>
+					</tr>
+
+					<tr>
+						<td width="55"></td>
+					</tr>
+				</table>
+
+				<!-- /div -->
+				</td>
+			</tr>
+		</table>
+
+		</div>
+		</td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="760">
+	<tr>
+		<td>
+		<div align="right">
+		<table border="0" cellpadding="0" cellspacing="0" width="760">
+			<tr>
+				<td width="192"><IMG height=31 src="https://ibank.klikbca.com/images/bottom1.gif;bca7bdddcb0df139017"
+					width=192></td>
+				<td background="images/bottom2.jpg" valign="top" width="535">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td width="213">
+						<div align="right"><font face="Verdana" size="1">Copyright
+						© 2000</font></div>
+						</td>
+						<td width="75">
+						<center><font face="Verdana" size="1"><IMG
+							height=23 src="https://ibank.klikbca.com/images/bca_logo.gif;bcafe5ade9eee184728" width=69></font></center>
+						</td>
+						<td width="247">
+						<div align="left"><font face="Verdana" size="1">All
+						Rights Reserved</font></div>
+						</td>
+					</tr>
+				</table>
+				</td>
+				<td width="33">
+				<div align="right"><IMG height=31 src="https://ibank.klikbca.com/images/bottom3.gif;bcae5df2c71e033287d"
+					width=33></div>
+				</td>
+			</tr>
+		</table>
+		</div>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+
+
+<script>
+
+var blnSubmitted = false;
+
+function Login_Form_Validator( theForm ) {
+
+  document.forms[0]['value(user_id)'].autocomplete = 'off';
+  document.forms[0]['value(pswd)'].autocomplete = 'off';
+
+  var blnResponse = false;
+  if (blnSubmitted) {
+    return false;
+  }
+
+  var strErrMsg = "";
+  if( document.forms[0]['value(user_id)'].value == '') {
+    alert("Silakan mengisi User ID anda/Please input your User ID");
+    document.forms[0]['value(user_id)'].focus();
+    return false;
+  }
+  if( document.forms[0]['value(user_id)'].value.length>12) {
+    alert("User ID/Password Anda salah / Your User ID/Password is Wrong");
+    document.forms[0]['value(user_id)'].select();
+    document.forms[0]['value(user_id)'].focus();
+    return false;
+  }
+
+  if(document.forms[0]['value(pswd)'].value == '') {
+    alert("Silakan mengisi PIN anda/Please input your PIN");
+    document.forms[0]['value(pswd)'].focus();
+    return false;
+  }
+  if(document.forms[0]['value(pswd)'].value.length<6) {
+    alert("PIN harus 6 Angka/PIN must be 6 digits");
+    document.forms[0]['value(pswd)'].focus();
+    return false;
+  }
+
+  //if(strErrMsg != '') {
+  //  alert(strErrMsg);
+  //  return false;
+  //}
+
+  //blnSubmitted =  confirm("Click OK to login.");
+  if ( !blnSubmitted ) {
+    blnSubmitted = true;
+    blnResponse = true;
+  }
+
+  //if('< %= blnLogout %>'=='true')
+	//blnResponse = false;
+
+  return blnResponse;
+}
+
+function showMsg(strErr) {
+  alert(strErr);
+}
+
+function sPrivacy() {
+
+    msgWindow=window.open("privacy.htm","NameOfWindow","toolbar=no,width=790,height=380,left=20,top=80,directories=no,status=no,scrollbars=yes,resize=yes,menubar=no")
+
+}
+
+</script>
