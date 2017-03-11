@@ -5,7 +5,7 @@ ignore_user_abort(true);
 header('content-type:text/plain');
 require("class/Telegram.php");
 require("class/AI.php");	
-$z=new Telegram("348646582:AAFJoLLmDhpToduqBIYLTE9TbJjZslzMmOg");
+$z=new Telegram("");
 $count=0;
 do{$c=array();
 $z->clear();
