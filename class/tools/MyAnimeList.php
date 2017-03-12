@@ -20,4 +20,3 @@ class MyAnimeList extends Crayner_Machine
 	}
 
 }
-?>

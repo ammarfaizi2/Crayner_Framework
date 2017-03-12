@@ -343,7 +343,7 @@ $this->command = array(
                                 ""
                             );
                         foreach ($a as $key => $value) {
-                            $key!="image" AND $msg[2].=ucfirst($key)." : \"".$value."\"".PHP_EOL;
+                            $key!="image" AND $msg[2].=ucfirst($key)." : \"".html_entity_decode($value,ENT_QUOTES,'UTF-8')."\"".PHP_EOL;
                         }
                     } else {
                        $msg = "Mohon maaf \"{$this->_msg}\" tidak ditemukan !";
@@ -359,7 +359,7 @@ $this->command = array(
                                 ""
                             );
                         foreach ($a as $key => $value) {
-                            $key!="image" AND $msg[2].=ucfirst($key)." : \"".$value."\"".PHP_EOL;
+                            $key!="image" AND $msg[2].=ucfirst($key)." : \"".html_entity_decode($value,ENT_QUOTES,'UTF-8')."\"".PHP_EOL;
                         }
                     } else {
                        $msg = "Mohon maaf \"{$this->_msg}\" tidak ditemukan !";
