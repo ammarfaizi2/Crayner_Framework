@@ -15,10 +15,14 @@ class Telegram extends Crayner_Machine{
 		$rt=$a;
 		return $rt;
 	}
+<<<<<<< HEAD
 	public function sendMessage($text,$to,$q=null){
 		if ($q===true) {
 			return $this->qurl($this->q."sendMessage",null,array("chat_id"=>$to,"text"=>$text));
 		}
+=======
+	public function sendMessage($text,$to){
+>>>>>>> 49131bb5cde077f62e5a44b2b98cd80bba7f65db
 		return $this->qurl($this->q."sendMessage",null,array("chat_id"=>$to,"text"=>$text));
 	}
 	public function sendPhoto($photo,$to,$capt=null){

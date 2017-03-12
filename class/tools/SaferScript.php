@@ -3,7 +3,11 @@ namespace tools;
 class SaferScript {
   public $source;
   public $allowedCalls;
+<<<<<<< HEAD
   public function __construct($scriptText) {
+=======
+  public function SaferScript($scriptText) {
+>>>>>>> 49131bb5cde077f62e5a44b2b98cd80bba7f65db
     $this->source = $scriptText;
     $this->allowedCalls = array();
   }

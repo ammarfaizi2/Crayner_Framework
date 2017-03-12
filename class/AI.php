@@ -5,6 +5,7 @@ date_default_timezone_set("Asia/Jakarta");
 * @license RedAngel_PHP_Concept (c) 2017
 * @package Artificial Intelegence
 */
+<<<<<<< HEAD
 include_once('tools/JadwalSholat.php');
 include_once('tools/Whois/Whois.php');
 include_once('tools/MyAnimeList.php');
@@ -22,6 +23,20 @@ use tools\Brainly;
 use tools\Saklar;
 use tools\TV;
 
+=======
+include_once('tools/Whois/Whois.php');
+include_once('tools/SaferScript.php');
+include_once('tools/Google_Translate.php');
+include_once('tools/Brainly.php');
+include_once('tools/Saklar.php');
+include_once('tools/TV.php');
+use tools\Whois\Whois;
+use tools\SaferScript;
+use tools\Google_Translate;
+use tools\Brainly;
+use tools\Saklar;
+use tools\TV;
+>>>>>>> 49131bb5cde077f62e5a44b2b98cd80bba7f65db
 class AI{
 	private $jam;
 	private $sapa;
@@ -202,10 +217,15 @@ $this->command = array(
 "whois"=>1,
 "hitung"=>1,
 "jadwal"=>1,
+<<<<<<< HEAD
 "jadwal_sholat"=>1,
 "lampu"=>2,
 "tv"=>3,
 "q_anime"=>1
+=======
+"lampu"=>2,
+"tv"=>3,
+>>>>>>> 49131bb5cde077f62e5a44b2b98cd80bba7f65db
 );
 	}
 	private function word_check($needle,$haystack,$word_identical=false,$trreply=false,$timerange=null,$max_words=null,$max_length=null,$word_exception=null){
@@ -332,6 +352,7 @@ $this->command = array(
 			$msg = "Permission Dennied : ".$actor;
 		} else if(isset($this->command[$string])){
 			switch($string){
+<<<<<<< HEAD
 				case 'q_anime':
                     $a = new MyAnimeList("ammarfaizi2","triosemut123");
                     $a = (array)$a->search($this->_msg)->entry;
@@ -348,6 +369,8 @@ $this->command = array(
                        $msg = "Mohon maaf \"{$this->_msg}\" tidak ditemukan !";
                     }
                     break;
+=======
+>>>>>>> 49131bb5cde077f62e5a44b2b98cd80bba7f65db
 				case 'ask':
 					$ask=function($query){
 						$a = new Brainly();
@@ -381,6 +404,7 @@ $this->command = array(
 			$msg=$a;
 				break;
 				case 'translate':
+<<<<<<< HEAD
                     $translator = new Translator();
                     $jsonMsg    = $translator->translate($this->_msg);
                     if ($jsonMsg->code == 200) {
@@ -411,6 +435,22 @@ $this->command = array(
                     $a=$a->get_jadwal($b[0]);
                     $msg=$a===false?"Mohon maaf, jadwal sholat ".$b[0]." tidak ditemukan !":$a;
                     break;
+=======
+				$a = new Google_Translate();
+				$msg=$a->translate($this->_msg);
+				break;
+				case 'ctranslate':
+			$param = explode(" ",$this->_msg);
+			if (strlen($param[0])==2 || strlen($param[1])==2) {
+				$par = $param[0].",".$param[1];
+				unset($param[0],$param[1]);
+				$msg = new Google_Translate();
+				$msg = $msg->translate(implode(" ",$param),$par);	
+			} else {
+				$msg = "Mohon maaf, penulisan parameter custom translate salah.\n\nPenulisan yang benar :\nctranslate [from] [to] [string]\n\nContoh:\nctranslate en id 'how are you?'";
+			}
+				break;
+>>>>>>> 49131bb5cde077f62e5a44b2b98cd80bba7f65db
 				case 'hitung':
 				$a=array("x");$b=array("*");
 				$ls = new SaferScript('$q = '.str_replace($a,$b,$this->_msg).';');
