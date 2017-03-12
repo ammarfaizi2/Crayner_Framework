@@ -5,7 +5,6 @@ date_default_timezone_set("Asia/Jakarta");
 * @license RedAngel_PHP_Concept (c) 2017
 * @package Artificial Intelegence
 */
-<<<<<<< HEAD
 include_once('tools/JadwalSholat.php');
 include_once('tools/Whois/Whois.php');
 include_once('tools/MyAnimeList.php');
