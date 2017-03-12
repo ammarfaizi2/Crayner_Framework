@@ -205,7 +205,8 @@ $this->command = array(
 "jadwal_sholat"=>1,
 "lampu"=>2,
 "tv"=>3,
-"q_anime"=>1
+"q_anime"=>1,
+"q_manga"=>1
 );
 	}
 	private function word_check($needle,$haystack,$word_identical=false,$trreply=false,$timerange=null,$max_words=null,$max_length=null,$word_exception=null){
@@ -335,6 +336,22 @@ $this->command = array(
 				case 'q_anime':
                     $a = new MyAnimeList("ammarfaizi2","triosemut123");
                     $a = (array)$a->search($this->_msg)->entry;
+                    if (!empty($a)) {
+                        $msg = array(
+                                'img/text',
+                                $a['image'],
+                                ""
+                            );
+                        foreach ($a as $key => $value) {
+                            $key!="image" AND $msg[2].=ucfirst($key)." : \"".$value."\"".PHP_EOL;
+                        }
+                    } else {
+                       $msg = "Mohon maaf \"{$this->_msg}\" tidak ditemukan !";
+                    }
+                    break;
+                case 'q_manga':
+                    $a = new MyAnimeList("ammarfaizi2","triosemut123");
+                    $a = (array)$a->search($this->_msg,"manga")->entry;
                     if (!empty($a)) {
                         $msg = array(
                                 'img/text',

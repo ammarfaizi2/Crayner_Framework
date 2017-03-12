@@ -13,9 +13,9 @@ class MyAnimeList extends Crayner_Machine
 	{
 		$this->option = array(CURLOPT_USERPWD=>"{$user}:{$pass}",CURLOPT_CONNECTTIMEOUT=>30);
 	}
-	public function search($query)
+	public function search($query,$type=null)
 	{
-		$a = simplexml_load_string($this->qurl("https://myanimelist.net/api/anime/search.xml?q=".urlencode($query),null,null,$this->option,null));
+		$a = simplexml_load_string($this->qurl("https://myanimelist.net/api/".($type===null?"anime":$type)."/search.xml?q=".urlencode($query),null,null,$this->option,null));
 		return $a;
 	}
 
