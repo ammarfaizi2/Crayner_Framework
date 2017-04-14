@@ -4,10 +4,24 @@
 <title>Pendaftaran Anggota RedAngel</title>
 <meta name="viewport" content="width=device-height
 ;">
+<style>
+body{
+	font-family:Tahoma;
+}
+.sb{
+	margin-top:5%;
+}
+.fcg{
+	border:3px solid black;
+	margin-top:8%;
+	padding-bottom:4%;
+	width:85%;
+}
+</style>
 </head>
 <body>
 <center>
-<div>
+<div class="fcg">
 <form method="post" action="?ref=register">
 <table>
 <thead>
@@ -56,7 +70,7 @@ foreach($a as $a){
 <tr><td>Konfirmasi Password</td><td>:</td><td><input type="password" name="cpassword"></td></tr>
 </tbody>
 <tfoot>
-<tr><th colspan="3" align="center"><input type="submit" name="register"></th></tr>
+<tr><th colspan="3" align="center"><div class="sb"><input type="submit" name="register"></div></th></tr>
 </tfoot>
 </table>
 </form>
