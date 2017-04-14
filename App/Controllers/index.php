@@ -6,8 +6,20 @@ class index extends Controller
 {
 	public function index()
 	{
-		echo "hello world<br>";
-		$a = $this->load->model('index');
-		print_r($a->aaa());
+		$lg = $this->load->model('login_status');
+		$lg = $lg->status();
+		if($lg===true){
+			$this->load->view('home');
+		} else {
+			$a = $this->load->model('login');
+			if(isset($_POST['login'])){
+				
+				exit();
+			}
+			$a->login_form();
+			$data = array('token'=>$a->token());
+			$this->load->view('login');
+		}
+		return true;
 	}
 }
