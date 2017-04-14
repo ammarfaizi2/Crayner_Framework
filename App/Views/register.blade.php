@@ -1,3 +1,8 @@
+<?php
+if(isset($_COOKIE['alert'])){
+	$al = $_COOKIE['alert'];
+	setcookie('alert',null,0);
+}?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +23,9 @@ body{
 	width:85%;
 }
 </style>
+<?php print isset($al)?'<script>
+alert("'.$al.'");
+</script>':null;?>
 </head>
 <body>
 <center>
