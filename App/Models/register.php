@@ -16,7 +16,6 @@ $l = array(
 'username'=>strlen($data['username']),
 'password'=>strlen($data['password']),
 'phone'=>strlen($data['phone'])
-
 );
 if(preg_match("#[^a-zA-Z\s\']#",$data['name'])){
 	$this->err = "Nama tidak boleh menggunakan karakter khusus !";
@@ -45,10 +44,6 @@ if($l['password']<6){
 if($l['password']>3600){
 	$this->err = "Password terlalu panjang ! (Max 3600 karakter)";
 }
-
-
-
-			
 		} else {
 			$this->err = "Data yang anda masukkan belum lengkap !";
 		}
@@ -60,6 +55,6 @@ if($l['password']>3600){
 	}
 	public function insert()
 	{
-		
+		$st = $this->db->prepare("INSERT INTO `account_data` (`userid`,`username`,`email`,`ukey`,`password`,`authority`) VALUES (:a,:b,:c,:d,:e,:f);");
 	}
 }
