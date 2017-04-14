@@ -1,4 +1,3 @@
-<?php # header("content-type:text/plain");?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,3 +37,30 @@ for($i=1;$i<=12;$i++){
 foreach(range((int)date("Y"),1980) as $b){
 	?><option value="<?php print $b;?>"><?php print $b;?></option><?php }?></select></tr>
 <tr><td>Alamat</td><td>:</td><td><textarea></textarea></td></tr>
+<tr><td>Agama</td><td>:</td><td>
+<select name="religion">
+<option value=""></option>
+<?php
+$a = array("Islam","Kristen","Katolik","Hindu","Budha","Konghucu","Lainnya");
+foreach($a as $a){
+	print '<option value="'.$a.'">'.$a.'</option>';
+}?></select></td></tr>
+<tr><td>Nomor HP</td><td>:</td><td><input type="text" name="phone"></td></tr>
+</tbody>
+<thead>
+<tr><th colspan="3" align="center"><h3>Buat Akun</h3></th></tr>
+</thead>
+<tbody>
+<tr><td>Username</td><td>:</td><td><input type="text" name="username"></td></tr>
+<tr><td>Password</td><td>:</td><td><input type="password" name="password"></td></tr>
+<tr><td>Konfirmasi Password</td><td>:</td><td><input type="password" name="cpassword"></td></tr>
+</tbody>
+<tfoot>
+<tr><th colspan="3" align="center"><input type="submit" name="register"></th></tr>
+</tfoot>
+</table>
+</form>
+</div>
+</center>
+</body>
+</html>

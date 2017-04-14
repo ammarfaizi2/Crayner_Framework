@@ -10,7 +10,7 @@ class register extends Model
 	}
 	public function validation()
 	{
-		
+					
 	}
 	public function errorInfo()
 	{

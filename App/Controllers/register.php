@@ -6,6 +6,17 @@ class register extends Controller
 {
 	public function index()
 	{
-		return $this->load->view('register');
+		if(isset($_POST['register'])){
+			$a = $this->load->model('register');
+			$a->validation($_POST);
+			if($err=$a->errorInfo(true)){
+				setcookie('alert',$err,time()+300);
+				header('location:?ref=reg');
+				exit();
+			}
+			exit();
+		}
+		$this->load->view('register');
+		return true;
 	}
 }
