@@ -4,9 +4,14 @@ use System\Core;
 
 class Controller
 {
+	protected $load;
 	public function __construct()
 	{
 		$this->load = $this;
+	}
+	protected function helper($helper)
+	{
+		require_once BASEPATH.'/System/Helper/'.$helper.'.php';
 	}
 	protected function model($model)
 	{
