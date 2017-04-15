@@ -9,9 +9,7 @@ if(isset($_COOKIE['alert'])){
 function v($v)
 {
 	return 'value="'.$v.'"';
-}
-var_dump($_COOKIE);
-?>
+}?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,7 +1,6 @@
 <?php
 namespace App\Models;
 use System\Model;
-use PDO;
 class register extends Model
 {
 	public function __construct()
