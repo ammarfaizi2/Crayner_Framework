@@ -1,6 +1,7 @@
 <?php
 namespace App\Models;
 use System\Model;
+use PDO;
 class register extends Model
 {
 	public function __construct()
@@ -8,6 +9,13 @@ class register extends Model
 		parent::db();
 		$this->err = false;
 		$this->data = null;
+	}
+	private function check_pri($field,$val)
+	{
+		$st = $this->db->prepare("SELECT COUNT(`{$field}`) FROM `account_data` WHERE `{$field}`=:pp LIMIT 1;");
+		$st->execute(array(':pp'=>$val));
+		$st = $st->fetch(PDO::FETCH_NUM);
+		return (bool)$st[0];
 	}
 	public function validation($data)
 	{
@@ -44,6 +52,12 @@ if($l['password']<6){
 } else 
 if($l['password']>3600){
 	$this->err = "Password terlalu panjang ! (Max 3600 karakter)";
+} else 
+if($this->check_pri('username',$data['username'])){
+	$this->err = "Username sudah digunakan !";
+} else
+if($this->check_pri('email',$data['email'])){
+	$this->err = "E-Mail sudah digunakan !";
 } else {
 	$this->err = false;
 	$this->data = $data;
