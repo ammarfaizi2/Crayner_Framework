@@ -1,6 +1,6 @@
 <?php
 if(isset($_COOKIE['alert'])){
-	$al = $_COOKIE['alert'];
+	$al = teadecrypt($_COOKIE['alert']);
 	setcookie('alert',null,0);
 }?>
 <!DOCTYPE html>
