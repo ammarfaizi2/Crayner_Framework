@@ -7,6 +7,7 @@ class register extends Model
 	public function __construct()
 	{
 		parent::db();
+		$this->load->helper('rstr');
 		$this->err = false;
 	}
 	public function validation($data)
@@ -55,6 +56,14 @@ if($l['password']>3600){
 	}
 	public function insert()
 	{
+		$ada = false;
+		do{
+			
+		}while($ada);
 		$st = $this->db->prepare("INSERT INTO `account_data` (`userid`,`username`,`email`,`ukey`,`password`,`authority`) VALUES (:a,:b,:c,:d,:e,:f);");
+		$st->execute(array(
+		':a'=>
+		
+		));
 	}
 }

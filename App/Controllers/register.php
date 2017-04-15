@@ -4,6 +4,10 @@ use System\Controller;
 
 class register extends Controller
 {
+	public function __construct()
+	{
+		parent::__construct();
+	}
 	public function index()
 	{
 		if(isset($_POST['register'])){
@@ -16,6 +20,7 @@ class register extends Controller
 			}
 			exit();
 		}
+		$data['token'] = array();
 		$this->load->view('register');
 		return true;
 	}
