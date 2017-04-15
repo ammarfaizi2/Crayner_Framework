@@ -28,6 +28,7 @@ class register extends Controller
 				setcookie('alert',$err,time()+300);
 				header('location:?ref=reg&err=insert');
 			}
+			rdr("/checkpoint/?ref=register");
 			exit();
 		}
 		$data['token'] = rstr();
