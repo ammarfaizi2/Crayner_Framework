@@ -55,7 +55,7 @@ if($l['password']>3600){
 	}
 	public function errorInfo($a=0)
 	{
-		return $this->err;
+		return teacrypt($this->err);
 	}
 	public function insert()
 	{
