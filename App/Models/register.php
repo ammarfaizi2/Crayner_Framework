@@ -1,13 +1,14 @@
 <?php
 namespace App\Models;
 use System\Model;
-
+use PDO;
 class register extends Model
 {
 	public function __construct()
 	{
 		parent::db();
 		$this->err = false;
+		$this->data = null;
 	}
 	public function validation($data)
 	{
@@ -44,6 +45,10 @@ if($l['password']<6){
 } else 
 if($l['password']>3600){
 	$this->err = "Password terlalu panjang ! (Max 3600 karakter)";
+} else {
+	$this->err = false;
+	$this->data = $data;
+	$this->data['birthdate'] = $data['thn'].'-'.$data['bln'].'-'.$data['tgl'];
 }
 		} else {
 			$this->err = "Data yang anda masukkan belum lengkap !";
@@ -55,18 +60,37 @@ if($l['password']>3600){
 	}
 	public function errorInfo($a=0)
 	{
-		return teacrypt($this->err);
+		return $this->err===false?false:teacrypt($this->err);
 	}
 	public function insert()
 	{
 		$ada = false;
-		do{
-			
-		}while($ada);
-		$st = $this->db->prepare("INSERT INTO `account_data` (`userid`,`username`,`email`,`ukey`,`password`,`authority`) VALUES (:a,:b,:c,:d,:e,:f);");
+		$st = $this->db->prepare("SELECT `userid` FROM `account_data` ORDER BY `userid` DESC LIMIT 1;");
+	 $st->execute();
+	 $st = $st->fetch(PDO::FETCH_NUM);
+	 $uid = $st[0]+1;
+	 $ukey = rstr(72);
+		$st = $this->db->prepare("INSERT INTO `account_data` (`userid`,`username`,`email`,`ukey`,`password`,`authority`,`verified`,`blocked`,`registered_at`) VALUES (:a,:b,:c,:d,:e,:f,:g,:h,:i);");
 		$st->execute(array(
-		':a'=>''
-		
+		':a'=>$uid,
+		':b'=>$this->data['username'],
+		':c'=>$this->data['email'],
+		':d'=>strrev($ukey),
+		':e'=>teacrypt($this->data['password'],$ukey),
+		':f'=>'user',
+		':g'=>'false',
+		':h'=>'true',
+		':i'=>(date("Y-m-d H:i:s"))
+		));
+		$st = $this->db->prepare("INSERT INTO `account_info` (`userid`,`name`,`address`,`birthloc`,`birthdate`,`religion`,`phone`) VALUES (:a,:b,:c,:d,:e,:f,:g);");
+		$st->execute(array(
+			':a'=>$uid,
+			':b'=>ucfirst(strtolower($this->data['name'])),
+			':c'=>$this->data['address'],
+			':d'=>$this->data['birthloc'],
+			':e'=>$this->data['birthdate'],
+			':f'=>$this->data['birthloc'],
+			':g'=>$this->data['phone']
 		));
 	}
 }

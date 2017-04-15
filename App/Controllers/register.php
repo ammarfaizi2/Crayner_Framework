@@ -16,11 +16,17 @@ class register extends Controller
 		$a = $this->load->model('register');
 		if(isset($_POST['register']
 		)){
+			stcookie(array('fr'=>array(teacrypt(json_encode($_POST)),1200)));
 			$a->validation($_POST);
 			if($err=$a->errorInfo(true)){
 				setcookie('alert',$err,time()+300);
 				header('location:?ref=reg');
 				exit();
+			}
+			$a->insert();
+			if($err=$a->errorInfo(true)){
+				setcookie('alert',$err,time()+300);
+				header('location:?ref=reg&err=insert');
 			}
 			exit();
 		}

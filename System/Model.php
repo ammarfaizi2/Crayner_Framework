@@ -5,8 +5,14 @@ use System\Core;
 class Model extends Core
 {
 	protected $db;
-	public function db()
+	protected function db()
 	{
-		$this->db = parent::db();
+		require __DIR__.'/../Config/Database.php';
+		try{
+				$pdo = new \PDO("{$cfg['driver']}:host={$cfg['host']};dbname={$cfg['dbname']}",$cfg['user'],$cfg['pass']);
+		} catch(PDOException $e){
+			var_dump($e);
+		}
+		$this->db = $pdo;
 	}
 }
