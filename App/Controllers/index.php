@@ -16,8 +16,8 @@ class index extends Controller
 				
 				exit();
 			}
-			$a->login_form();
-			$data = array('token'=>$a->token());
+			$a->form();
+			#$data = array('token'=>$a->token());
 			$this->load->view('login');
 		}
 		return true;

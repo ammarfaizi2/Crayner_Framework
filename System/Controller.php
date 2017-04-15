@@ -8,6 +8,7 @@ class Controller
 	public function __construct()
 	{
 		$this->load = $this;
+		$this->load->helper('rdr');
 	}
 	protected function helper($helper)
 	{

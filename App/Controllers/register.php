@@ -28,8 +28,11 @@ class register extends Controller
 				setcookie('alert',$err,time()+300);
 				header('location:?ref=reg&err=insert');
 			}
-			rdr("/checkpoint/?ref=register");
-			exit();
+			$b = $this->load->model('mklogin');
+			if($b->mk_sess($a->uid) and 	$b->mk_ckp($a->uid)){
+				rdr("/checkpoint/?ref=register");
+			}
+			exit('Error !');
 		}
 		$data['token'] = rstr();
 		$key = rstr();

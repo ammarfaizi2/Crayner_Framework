@@ -82,6 +82,7 @@ if($this->check_pri('email',$data['email'])){
 	 $st->execute();
 	 $st = $st->fetch(PDO::FETCH_NUM);
 	 $uid = $st[0]+1;
+	 $this->uid = $uid;
 	 $ukey = rstr(72);
 		$st = $this->db->prepare("INSERT INTO `account_data` (`userid`,`username`,`email`,`ukey`,`password`,`authority`,`verified`,`blocked`,`registered_at`) VALUES (:a,:b,:c,:d,:e,:f,:g,:h,:i);");
 		$st->execute(array(

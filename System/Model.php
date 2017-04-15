@@ -15,4 +15,11 @@ class Model extends Core
 		}
 		$this->db = $pdo;
 	}
+	protected function need_hp($hp)
+	{
+		if(!function_exists($hp)){
+			throw new \Exception("{$hp} must be loaded !");
+		}
+		return false;
+	}
 }
