@@ -10,7 +10,8 @@ if(!function_exists('stcookie')){
 	}
 }
 if(!function_exists('clrcookie')){
-	function clrcookie($exception=null){
+	function clrcookie($exception=null)
+	{
 		$except = $exception===null?array():explode(',');
 		foreach($_COOKIE as $key => $val){
 			if(!in_array($key,$except)){

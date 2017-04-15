@@ -2,8 +2,7 @@
 if(isset($_COOKIE['alert'])){
 	$al = $_COOKIE['alert'];
 	setcookie('alert',null,0);
-}
-?>
+}?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,7 +78,11 @@ foreach($a as $a){
 <tr><td>Konfirmasi Password</td><td>:</td><td><input type="password" name="cpassword"></td></tr>
 </tbody>
 <tfoot>
-<tr><th colspan="3" align="center"><div class="sb"><input type="submit" name="register"></div></th></tr>
+<tr><th colspan="3" align="center"><div class="sb">
+<input type="hidden" name="rtoken" value="<?php print $token;?>">
+<input type="hidden" name="token_key" value="<?php print rstr(64);?>">
+<input type="submit" name="register">
+</div></th></tr>
 </tfoot>
 </table>
 </form>

@@ -11,6 +11,7 @@ class register extends Model
 	}
 	public function validation($data)
 	{
+		if(isset($_COOKIE['reg_tkn'],$_COOKIE['tknkey'],$data['rtoken']) and teadecrypt($_COOKIE['reg_tkn'],strrev($_COOKIE['tknkey']))==$data['rtoken']){
 		if(isset($data['name'],$data['email'],$data['birthloc'],$data['tgl'],$data['bln'],$data['thn'],$data['religion'],$data['phone'],$data['username'],$data['password'],$data['cpassword']) and !empty($data['name']) and !empty($data['email']) and !empty($data['birthloc']) and !empty($data['tgl']) and !empty($data['bln']) and !empty($data['thn']) and !empty($data['religion']) and !empty($data['phone']) and !empty($data['username']) and !empty($data['password']) and !empty($data['cpassword'])){
 $l = array(
 'username'=>strlen($data['username']),
@@ -46,6 +47,9 @@ if($l['password']>3600){
 }
 		} else {
 			$this->err = "Data yang anda masukkan belum lengkap !";
+		}
+		} else {
+			$this->err = "Invalid token !";
 		}
 		return false;
 	}
