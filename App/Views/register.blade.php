@@ -3,7 +3,6 @@ if(isset($_COOKIE['alert'])){
 	$al = $_COOKIE['alert'];
 	setcookie('alert',null,0);
 }
-echo $token;
 ?>
 <!DOCTYPE html>
 <html>
