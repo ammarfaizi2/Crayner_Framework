@@ -4,6 +4,10 @@ use System\Controller;
 
 class index extends Controller
 {
+	public function __construct()
+	{
+		parent::__construct();
+	}
 	public function index()
 	{
 		$lg = $this->load->model('login_status');
@@ -17,8 +21,7 @@ class index extends Controller
 				exit();
 			}
 			$a->form();
-			#$data = array('token'=>$a->token());
-			$this->load->view('login');
+			$this->load->view('login',array('token'=>1));
 		}
 		return true;
 	}

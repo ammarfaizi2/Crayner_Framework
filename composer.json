@@ -1,0 +1,12 @@
+{
+    "name": "root/racf",
+    "description": "Crayner Framework",
+    "license": "RedAngel PHP Concept",
+    "authors": [
+        {
+            "name": "Ammar Faizi",
+            "email": "ammarfaizi2@gmail.com"
+        }
+    ],
+    "require": {}
+}
