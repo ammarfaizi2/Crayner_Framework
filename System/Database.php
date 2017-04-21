@@ -21,9 +21,9 @@ class Database
 	{
 		return $this->db->query($query);
 	}
-	public function select($table,$fields=null,$clause=null)
+	public function select_pr($table,$fields=null,$clause=null)
 	{
-		$fields = $field===null?"*":$fields;
+		$fields = $fields===null?"*":$fields;
 		$q = "SELECT {$fields} FROM {$table}";
 		if(is_array($clause)){
 			
@@ -31,5 +31,16 @@ class Database
 			$q.=' '.$clause;
 		}
 		return $this->db->prepare($q);
+	}
+	public function insert($table,$val)
+	{
+		$fields = $bound = '';
+		$data = array();
+		foreach($val as $a => $b){
+			$fields.= "`{$a}`,";
+			$bound.= ":{$a},";
+			$data[':'.$a] = $b;
+		}
+		return $this->db->preapre("INSERT INTO {$table} ({$fields}) VALUES ({$bound});")->execute($data);
 	}
 }

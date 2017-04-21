@@ -38,7 +38,8 @@
 <div class="lgb">
 <input type="submit" name="login" value="Login">
 </div>
-<input type="hidden" name="token" value="<?php print $token;?>">
+<input type="hidden" name="token" value="<?php print $token['token'];?>">
+<input type="hidden" name="vi" value="<?php print $token['vi'];?>">
 </div>
 </form>
 </div>

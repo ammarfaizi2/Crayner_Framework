@@ -1,28 +1,33 @@
 <?php
 namespace App\Controllers;
 use System\Controller;
-
+defined("CORE_ENGINE") or die();
 class index extends Controller
 {
 	public function __construct()
 	{
 		parent::__construct();
+$this->load->helper("rstr");
+$this->load->helper("cookiemgr");
+$this->load->helper("teacrypt");
 	}
 	public function index()
 	{
-		$lg = $this->load->model('login_status');
-		$lg = $lg->status();
-		if($lg===true){
-			$this->load->view('home');
-		} else {
-			$a = $this->load->model('login');
-			if(isset($_POST['login'])){
-				
-				exit();
+		$md = $this->load->model("login");
+		if(isset($_POST['login'])){
+			/*/ cek login */
+			if($u=$md->check_login()){
+				/*/ buat sessionn */
+				$md->mksess($u);
+				header("location:");
+				exit("Login Success !");
+			} else {
+				header("location:?ref=login&err=login");
+				exit("Login Failed !");
 			}
-			$a->form();
-			$this->load->view('login',array('token'=>1));
 		}
+		
+		$this->load->view("login",array('token'=>$md->gentoken()));
 		return true;
 	}
 }
