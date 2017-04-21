@@ -1,7 +1,7 @@
 <?php
 namespace App\Models;
 use System\Model;
-use PDO;
+
 
 class login extends Model
 {
@@ -33,9 +33,9 @@ class login extends Model
 		$exp = 3600*24*14;
 		stcookie(array(
 			'usess'=>array(teacrypt($sess,$key),$exp),
-			'usess_key'=>array($key,$exp)
+			'usess_key'=>array($key,$exp),
 			'userid'=>array(teacrypt($id,$key),$exp),
-			''
+			'fgc_login'=>array('true',$exp)
 		));
 		$this->db->insert("login_session",array("userid"=>$id,"session"=>$sess,"login_at"=>(date("Y-m-d H:i:s",$now)),"expired"=>(date("Y-m-d H:i:s",$now+$exp)),"info"=>json_encode(array(
 		'ip'=>$_SERVER['REMOTE_ADDR'],
