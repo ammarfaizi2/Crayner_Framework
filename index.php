@@ -4,7 +4,6 @@
 * 
 *
 */
-
-require 'loader.php';
-require 'Config/Config.php';
-(new System\Action_Handler((new System\URI_Segment())->gs()))->run();
+require __DIR__ . '/crayner/loader.php';
+use System\Crayner;
+(new Crayner())->run();
