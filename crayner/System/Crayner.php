@@ -1,7 +1,7 @@
 <?php
 namespace System;
 use System\Crayner_Core;
-use System\Uri_Segment;
+use System\URI_Segment;
 /**
 *
 *		@author Ammar Faizi <ammarfaizi2@gmail.com>
