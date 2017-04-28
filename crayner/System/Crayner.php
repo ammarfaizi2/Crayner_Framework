@@ -18,17 +18,17 @@ class Crayner extends CraynerCore
 		/**
 		* Ambil REQUEST_URI (array)
 		*/
-		$this->uri = Uri_Segment::getUriSegments();
+		$this->uri = URI_Segment::getUriSegments();
 		
 		/**
 		* Ambil Segment URI [1] (class)
 		*/
-		$this->class = trim(Uri_Segment::getUriSegment(1,$this->uri));
+		$this->class = trim(URI_Segment::getUriSegment(1,$this->uri));
 		
 		/**
 		* Ambil Segment URI [2] (method)
 		*/
-		$this->method = trim(Uri_Segment::getUriSegment(2,$this->uri));
+		$this->method = trim(URI_Segment::getUriSegment(2,$this->uri));
 		
 		/**
 		* Index
