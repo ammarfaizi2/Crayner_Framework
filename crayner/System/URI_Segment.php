@@ -8,6 +8,7 @@ class Uri_Segment
 	}
 	public static function getUriSegment($n,$segs)
 	{
-		return count($segs)>0&&count($segs)>=($n-1)?$segs[$n]:'';
+		$c = count($segs);
+		return isset($segs[$n])&&!empty($segs[$n])?$segs[$n]:'';
 	}
 }
