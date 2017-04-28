@@ -22,7 +22,7 @@ class Controller extends CraynerCore
 		/**
 		*		Controller loader
 		*/
-		$this->load = new C_Loader($this->config);
+		$this->load = new C_Loader($this->config->___cfg);
 		
 		/**
 		* Autoload

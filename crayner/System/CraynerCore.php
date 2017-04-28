@@ -8,5 +8,10 @@ namespace System;
 */
 class CraynerCore
 {
-	
+	protected $router;
+	public function __construct()
+	{
+		require __DIR__.'/../App/Config/config.php';
+		$this->router = $cf['router'];
+	}
 }

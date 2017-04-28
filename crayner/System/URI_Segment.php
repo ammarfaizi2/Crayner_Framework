@@ -2,9 +2,15 @@
 namespace System;
 class Uri_Segment
 {
-	public static function getUriSegments()
-	{
-		return explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+	public static function getUriSegments($router='index.php')
+{
+if(strpos($_SERVER['REQUEST_URI'],$router)!==false){
+			$from = explode($router,$_SERVER['REQUEST_URI']);
+			$from = $from[1];
+		} else {
+			$from = $_SERVER['REQUEST_URI'];
+		}
+		return explode("/", parse_url($from, PHP_URL_PATH));
 	}
 	public static function getUriSegment($n,$segs)
 	{

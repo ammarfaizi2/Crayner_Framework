@@ -15,10 +15,11 @@ class Crayner extends CraynerCore
 	private $method;
 	public function __construct()
 	{
+		parent::__construct();
 		/**
 		* Ambil REQUEST_URI (array)
 		*/
-		$this->uri = URI_Segment::getUriSegments();
+		$this->uri = URI_Segment::getUriSegments($this->router);
 		
 		/**
 		* Ambil Segment URI [1] (class)

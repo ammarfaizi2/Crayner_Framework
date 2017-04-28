@@ -11,8 +11,12 @@ $cf = array(
 'host'			=>		'localhost',
 'user'			=>		'root',
 'pass'			=>		'',
-'dbname'	=>		'redangel'
+'dbname'	=>		'redangel',
 
+/**
+*		Router
+*/
+'router'=>'index.php'
 
 
 
