@@ -14,14 +14,15 @@ class Controller extends CraynerCore
 	public function __construct()
 	{
 		/**
-		*		Controller loader
-		*/
-		$this->load = new C_Loader();
-		
-		/**
 		*		Controller Config
 		*/
 		$this->config = new C_Config();
+		
+		
+		/**
+		*		Controller loader
+		*/
+		$this->load = new C_Loader($this->config);
 		
 		/**
 		* Autoload

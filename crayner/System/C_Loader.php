@@ -3,9 +3,9 @@ namespace System;
 
 class C_Loader
 {
-	public function __construct()
+	public function __construct($cf)
 	{
-		
+		$this->cf = $cf;
 	}
 	public function view($view,$___)
 	{
@@ -17,5 +17,9 @@ class C_Loader
 	public function helper($helper)
 	{
 		require __DIR__.'/Helper/'.$helper;
+	}
+	public function database()
+	{
+		return new \PDO($this->cf['driver'].':host='.$this->cf['host'].'; ')
 	}
 }
