@@ -18,20 +18,35 @@ class Controller extends CraynerCore
 		*/
 		$this->config = new C_Config();
 		
-		
-		/**
-		*		Controller loader
-		*/
-		$this->load = new C_Loader($this->config->___cfg);
-		
 		/**
 		* Autoload
 		*/
 		$this->autoload($this->config->autoload);
+		
+		/**
+		*		Loader
+		*/
+		$this->load = $this;
+	}
+	protected function model($model,$as=null)
+	{
+		$as = $as===null?$model:$as;
+		$model = "App\\Models\\{$model}";
+		$this->$as = new $model();
 	}
 	private function autoload($autoload)
 	{
 		
 	}
-	
+	public function view($view,$___)
+	{
+		foreach($___ as $____ => $__){
+			$$____ = $__;
+		}
+		require __DIR__.'/../App/Views/'.$view.'.php';
+	}
+	public function helper($helper)
+	{
+		require __DIR__.'/Helper/'.$helper;
+	}
 }

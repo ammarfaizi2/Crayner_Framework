@@ -10,6 +10,7 @@ class Model extends CraynerCore
 	}
 	protected function db()
 	{
-		$this->db = new Database();
+		require __DIR__.'/../App/Config/database.php';
+		$this->db = new Database($cf);
 	}
 }

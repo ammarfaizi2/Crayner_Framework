@@ -9,7 +9,9 @@ class Database
 	}
 	public function query($q)
 	{
-		return $this->_db->prepare($q);
+		$st = $this->_db->prepare($q);
+		$st->execute();
+		return $st;
 	}
 	public function insert($table,$data)
 	{
@@ -22,7 +24,7 @@ class Database
 		}
 		return $this->_db->prepare("INSERT INTO {$table} (".rtrim($fields,',').") VALUES (".rtrim($prepare,',').")")->execute($value);
 	}
-	public function get($table,$col,$where)
+	public function get($table)
 	{
 		
 	}
