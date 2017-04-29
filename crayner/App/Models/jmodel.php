@@ -11,6 +11,6 @@ class jmodel extends Model
 	}
 	public function getall()
 	{
-		return $this->db->query("SELECT * FROM account_data")->fetch();
+
 	}
 }

@@ -43,7 +43,7 @@ class Controller extends CraynerCore
 		foreach($___ as $____ => $__){
 			$$____ = $__;
 		}
-		require __DIR__.'/../App/Views/'.$view.'.php';
+		require __DIR__.'/../App/Views/'.$view.'.tpl.php';
 	}
 	public function helper($helper)
 	{
