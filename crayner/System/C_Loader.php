@@ -19,10 +19,6 @@ class C_Loader
 	{
 		require __DIR__.'/Helper/'.$helper;
 	}
-	public function database()
-	{
-		return new \PDO($this->cf['driver'].':host='.$this->cf['host'].';dbname='.$this->cf['dbname'],$this->cf['user'],$this->cf['pass']);
-	}
 	public function model($model,$as=null)
 	{
 		$as = $as===null?$model:$as;
