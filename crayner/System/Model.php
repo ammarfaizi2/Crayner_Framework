@@ -1,16 +1,15 @@
 <?php
 namespace System;
 use System\CraynerCore;
-
-class Model extends CraynerCore
+use System\Config_Handler;
+class Model
 {
 	public function __construct()
 	{
-		parent::__construct();
+		
 	}
 	protected function db()
 	{
-		require __DIR__.'/../App/Config/database.php';
-		$this->db = new Database($cf);
+		$this->db = new Database(Config_Handler::iq()->db());
 	}
 }

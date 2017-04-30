@@ -6,13 +6,13 @@ namespace System;
 *		@license RedAngel PHP Concept
 *
 */
-class CraynerCore implements Core
+class CraynerCore extends CoreHandler implements Core
 {
 	protected $router;
 	public function __construct()
 	{
 		require __DIR__.'/../App/Config/config.php';
-		$this->router = $cf['router'];
+		$this->config = $cf;
 	}
 	public function database()
 	{
@@ -21,5 +21,9 @@ class CraynerCore implements Core
 	public function config()
 	{
 		
+	}
+	public function getrouter()
+	{
+		return $this->cf['router'];
 	}
 }

@@ -2,6 +2,7 @@
 namespace System;
 use System\Crayner_Core;
 use System\URI_Segment;
+use System\Config_Handler;
 /**
 *
 *		@author Ammar Faizi <ammarfaizi2@gmail.com>
@@ -15,11 +16,10 @@ class Crayner extends CraynerCore
 	private $method;
 	public function __construct()
 	{
-		parent::__construct();
 		/**
 		* Ambil REQUEST_URI (array)
 		*/
-		$this->uri = URI_Segment::getUriSegments($this->router);
+		$this->uri = URI_Segment::getUriSegments(Config_Handler::iq()->router());
 		
 		/**
 		* Ambil Segment URI [1] (class)

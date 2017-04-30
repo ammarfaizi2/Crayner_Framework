@@ -8,6 +8,6 @@ if(!function_exists('js')){
 if(!function_exists('css')){
 	function css($file,$abs=false)
 	{
-		print '<link rel="stylesheet" type="text/css" href="'.(BASEURL.CSSURL).'/'.($abs?$file:($file.'.css').'">';
+		print '<link rel="stylesheet" type="text/css" href="'.(BASEURL.CSSURL).'/'.($abs?$file:$file.'.css').'">';
 	}
 }

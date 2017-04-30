@@ -9,25 +9,21 @@ use System\C_Config;
 *		@license RedAngel PHP Concept
 *
 */
-class Controller extends CraynerCore
+class Controller 
 {
 	public function __construct()
 	{
 		/**
-		*		Controller Config
-		*/
-		$this->config = new C_Config();
-		
-		/**
 		* Autoload
 		*/
-		$this->autoload($this->config->autoload);
+	#	$this->autoload($this->config->autoload);
 		
 		/**
 		*		Loader
 		*/
 		$this->load = $this;
 	}
+	
 	protected function model($model,$as=null)
 	{
 		$as = $as===null?$model:$as;
@@ -47,6 +43,6 @@ class Controller extends CraynerCore
 	}
 	public function helper($helper)
 	{
-		require __DIR__.'/Helper/'.$helper;
+		require __DIR__.'/Helper/'.$helper.'.php';
 	}
 }

@@ -7,4 +7,5 @@
 */
 require __DIR__ . '/crayner/loader.php';
 use System\Crayner;
-(new Crayner())->run();
+$app = new Crayner();
+$app->run();
