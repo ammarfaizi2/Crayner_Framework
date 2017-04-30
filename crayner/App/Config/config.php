@@ -12,8 +12,13 @@ $cf = array(
 */
 'router'=>'index.php'
 
+/**
+*		Autoload Model
+*/
+'autoload_model'=>array(),
 
-'autoload_model'=>array()
-
-
+/**
+*		Autoload Helper
+*/
+'autoload_helper'=>array(),
 );
