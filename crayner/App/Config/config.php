@@ -1,9 +1,5 @@
 <?php
 defined('BASEURL') or define('BASEURL','http://localhost');
-defined('CSSURL') or define('CSSURL',BASEURL.'/assets/css');
-defined('JSURL') or define('JSURL',BASEURL.'/assets/js');
-
-
 
 $cf = array(
 
@@ -12,15 +8,19 @@ $cf = array(
 */
 'router'=>'index.php',
 
-'autoload'=>array(
 /**
-*		Autoload Model
+* Assets CSS and JS
 */
-'autoload_model'=>array(),
+'assets'=>array(
+	'css'=>BASEURL.'/assets/css',
+	'js'=>BASEURL.'/assets/js'
+),
 
 /**
-*		Autoload Helper
+*		Autoload
 */
-'autoload_helper'=>array(),
+'autoload'=>array(
+	'autoload_model'=>array(),
+	'autoload_helper'=>array(),
 )
 );

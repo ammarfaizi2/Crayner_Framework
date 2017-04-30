@@ -3,27 +3,30 @@ namespace System;
 class Config_Handler
 {
 	public static $instance;
-	public $db;
-	public $cf;
+	public static $db;
+	public static $cf;
 	public function __construct()
 	{
 		require __DIR__.'/../App/Config/config.php';
-		$this->cf = $cf;
-		require __DIR__.'/../App/Config/database.php';
-		$this->db = $cf;
+		self::$cf = $cf;
 		self::$instance = $this;
 	}
 	public function autoload()
 	{
-		return $this->cf['autoload'];
+		return self::$cf['autoload'];
 	}
 	public function router()
 	{
-		return $this->cf['router'];
+		return self::$cf['router'];
 	}
 	public function db()
 	{
-		return $this->db;
+		require __DIR__.'/../App/Config/database.php';
+		return $cf;
+	}
+	public function assets($type)
+	{
+		return self::$cf['assets'][$type];
 	}
 	public static function iq()
 	{
