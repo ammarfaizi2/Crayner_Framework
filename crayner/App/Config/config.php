@@ -10,8 +10,9 @@ $cf = array(
 /**
 *		Router
 */
-'router'=>'index.php'
+'router'=>'index.php',
 
+'autoload'=>array(
 /**
 *		Autoload Model
 */
@@ -21,4 +22,5 @@ $cf = array(
 *		Autoload Helper
 */
 'autoload_helper'=>array(),
+)
 );

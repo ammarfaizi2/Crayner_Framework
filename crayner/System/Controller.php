@@ -1,8 +1,7 @@
 <?php
 namespace System;
 use System\CraynerCore;
-use System\C_Loader;
-use System\C_Config;
+use System\Config_Handler;
 /**
 *
 *		@author Ammar Faizi <ammarfaizi2@gmail.com>
@@ -16,7 +15,7 @@ class Controller
 		/**
 		* Autoload
 		*/
-	#	$this->autoload($this->config->autoload);
+		$this->autoload(Config_Handler::iq()->autoload());
 		
 		/**
 		*		Loader

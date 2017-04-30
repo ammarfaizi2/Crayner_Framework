@@ -13,6 +13,10 @@ class Config_Handler
 		$this->db = $cf;
 		self::$instance = $this;
 	}
+	public function autoload()
+	{
+		return $this->cf['autoload'];
+	}
 	public function router()
 	{
 		return $this->cf['router'];
