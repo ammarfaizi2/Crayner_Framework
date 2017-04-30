@@ -8,15 +8,25 @@ class Action_Handler
 	{
 		$this->cmd = $cmd;
 	}
-	public function make($type,$filename)
+	public function make($type,$name)
 	{
 		switch($type){
 			case 'model':
-				$tpl = __DIR__.'/Repository/model.ice'
+				$tpl = __DIR__.'/Repository/model.ice';
+				$to = __DIR__.'/../App/Models/'.$name.'.php';
+				file_exists($to) and die("\n\n{$name} model already exists !\n\n");
 				$this->ckfile($tpl);
-				$a = str_replace("•••model•••",$filename,file_get_contents($tpl));
+							file_put_contents($to,str_replace("•••model•••",$name,file_get_contents($tpl)));
+				file_exists($to) and die("\n\nModel berhasil dibuat !\n\n{$to}\n") or die("\n\nModel berhasil dibuat !\n\n");
 				break;
-				
+				case 'controller':
+				$tpl = __DIR__.'/Repository/controller.ice';
+				$to = __DIR__.'/../App/Controllers/'.$name.'.php';
+				file_exists($to) and die("\n\n{$name} controller already exists !\n\n");
+				$this->ckfile($tpl);
+					file_put_contents($to,str_replace("•••controller•••",$name,file_get_contents($tpl)));
+				file_exists($to) and die("\n\nController berhasil dibuat !\n\n{$to}\n") or die("\n\nController gagal dibuat !\n\n");
+				break;
 		}
 	}
 	private function ckfile($file)
