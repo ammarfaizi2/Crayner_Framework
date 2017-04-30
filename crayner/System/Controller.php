@@ -8,7 +8,7 @@ use System\Config_Handler;
 *		@license RedAngel PHP Concept
 *
 */
-class Controller 
+class Controller extends CraynerCore
 {
 	public function __construct()
 	{

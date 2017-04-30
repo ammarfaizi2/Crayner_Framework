@@ -2,7 +2,7 @@
 namespace System;
 use System\CraynerCore;
 use System\Config_Handler;
-class Model
+class Model extends CraynerCore
 {
 	public function __construct()
 	{
