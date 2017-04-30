@@ -13,7 +13,7 @@ $cf = array(
 'router'=>'index.php'
 
 
-
+'autoload_model'=>array()
 
 
 );
