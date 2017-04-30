@@ -13,8 +13,10 @@ class Action_Handler
 		switch($type){
 			case 'model':
 				$tpl = __DIR__.'/Repository/model.ice'
-				if(!file_exists($tpl))
+				$this->ckfile($tpl);
 				$a = str_replace("•••model•••",$filename,file_get_contents($tpl));
+				break;
+				
 		}
 	}
 	private function ckfile($file)
