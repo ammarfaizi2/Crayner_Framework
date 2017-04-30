@@ -1,9 +1,10 @@
 <?php
 namespace System;
-
 class Config_Handler
 {
 	public static $instance;
+	public $db;
+	public $cf;
 	public function __construct()
 	{
 		require __DIR__.'/../App/Config/config.php';
