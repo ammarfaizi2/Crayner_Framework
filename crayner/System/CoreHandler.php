@@ -3,5 +3,4 @@ namespace System;
 
 abstract class CoreHandler
 {
-
 }

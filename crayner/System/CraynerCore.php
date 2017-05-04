@@ -1,5 +1,6 @@
 <?php
 namespace System;
+
 /**
 *
 *		@author Ammar Faizi <ammarfaizi2@gmail.com>
@@ -8,5 +9,4 @@ namespace System;
 */
 class CraynerCore extends CoreHandler implements Core
 {
-	
 }

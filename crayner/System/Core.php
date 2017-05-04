@@ -3,5 +3,4 @@ namespace System;
 
 interface Core
 {
-
 }
