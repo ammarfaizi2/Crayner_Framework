@@ -3,6 +3,8 @@ namespace Console;
 
 use Console\ActionHandler;
 use Console\Color\Colors;
+define('REPODIR',realpath(__DIR__.'/Repositories/'));
+define('APPDIR',realpath(__DIR__.'/../App/'));
 class ConsoleHandler
 {
     public function __construct($ar)
@@ -15,7 +17,7 @@ class ConsoleHandler
     }
     private function info()
     {
-        print $this->clr->getColoredString("halo","red");
+        
         die;
     }
     public function run()
