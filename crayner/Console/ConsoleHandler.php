@@ -3,8 +3,9 @@ namespace Console;
 
 use Console\ActionHandler;
 use Console\Color\Colors;
-define('REPODIR',realpath(__DIR__.'/Repositories').'/');
-define('APPDIR',realpath(__DIR__.'/../App').'/');
+
+define('REPODIR', realpath(__DIR__.'/Repositories').'/');
+define('APPDIR', realpath(__DIR__.'/../App').'/');
 class ConsoleHandler
 {
     public function __construct($ar)
@@ -19,7 +20,6 @@ class ConsoleHandler
     }
     private function info()
     {
-        
         die;
     }
     public function run()
