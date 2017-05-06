@@ -8,18 +8,25 @@ class ActionHandler
     {
         $this->cmd = explode(' ',$cmd);
     }
-    public function cmd1($cmd,$sbcmd=null,$arg2=null)
+    public function cmd1($cmd,$sbcmd=null,$arg1=null,$arg2=null)
     {
-        $command = array(
+        $commands = array(
                 'make'   => 'Make',
                 'delete' => 'Delete',
             );
+        $class = "Console\\Commands\\".$commands[$cmd];
+        return (new $class($sbcmd,$arg1,$arg2))->run();
     }
     public function run()
     {
-        $a = explode(':', $this->cmd[1]);
+        $a = explode(':', $this->cmd[0]);
         if (count($a)==2) {
-            $this->cmd1($a[0],$a[1],(isset($this->cmd[2])?$this->cmd[2]:null),(isset($this->cmd[3])?$this->cmd[3]:null));
+           return $this->cmd1(
+                $a[0],
+                (isset($a[1])?$a[1]:null),
+                (isset($this->cmd[1])?$this->cmd[1]:null),
+                (isset($this->cmd[2])?$this->cmd[2]:null)
+            );
         }
     }
 }

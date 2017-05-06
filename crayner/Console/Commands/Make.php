@@ -21,14 +21,19 @@ class Make extends ConsoleCore
 	}
 	public function run()
 	{
-		return $this->($this->what)($file,$option);		
+		return $this->{$this->what}($this->file,$this->option);		
 	}
 	private function controller($file,$option=null)
 	{
+		$file = trim($file);
+		if (empty($file)) {
+			return Message::Error("Masukkan nama controller yang akan dibuat !");
+		}
 		$fileloc = APPDIR.'Controllers/'.$file.'.php';
 		if (file_exists($fileloc)) {
-			return Message::Error("Controller {$file} sudah ada !");
+			return Message::Error("Controller \"{$file}\" sudah ada !");
 		}
 		file_put_contents($fileloc,str_replace('•••controller•••',$file,file_get_contents(REPODIR.'controller.ice')));
+		return file_exists($fileloc) ? Message::Success("Berhasil membuat controller \"{$file}\" !") : Message::Error("Gagal membuat controller \"{$file}\" !");
 	}
 }
