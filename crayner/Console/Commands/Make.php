@@ -36,4 +36,17 @@ class Make extends ConsoleCore
 		file_put_contents($fileloc,str_replace('•••controller•••',$file,file_get_contents(REPODIR.'controller.ice')));
 		return file_exists($fileloc) ? Message::Success("Berhasil membuat controller \"{$file}\" !") : Message::Error("Gagal membuat controller \"{$file}\" !");
 	}
+	private function model($file,$option=null)
+	{
+		$file = trim($file);
+		if (empty($file)) {
+			return Message::Error("Masukkan nama model yang akan dibuat !");
+		}
+		$fileloc = APPDIR.'Models/'.$file.'.php';
+		if (file_exists($fileloc)) {
+			return Message::Error("Model \"{$file}\" sudah ada !");
+		}
+		file_put_contents($fileloc,str_replace('•••model•••',$file,file_get_contents(REPODIR.'model.ice')));
+		return file_exists($fileloc) ? Message::Success("Berhasil membuat model \"{$file}\" !") : Message::Error("Gagal membuat model \"{$file}\" !");
+	}
 }
