@@ -3,6 +3,7 @@ namespace Console\Commands;
 
 defined('REPODIR') or die('REPODIR not defined !');
 use Console\ConsoleCore;
+use Console\Message;
 /**
 * @author Ammar Faizi <ammarfaizi2@gmail.com>
 */
@@ -26,7 +27,7 @@ class Make extends ConsoleCore
 	{
 		$fileloc = APPDIR.'Controllers/'.$file.'.php';
 		if (file_exists($fileloc)) {
-			return 
+			return Message::Error("Controller {$file} sudah ada !");
 		}
 		file_put_contents($fileloc,str_replace('•••controller•••',$file,file_get_contents(REPODIR.'controller.ice')));
 	}

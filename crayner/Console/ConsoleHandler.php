@@ -12,6 +12,8 @@ class ConsoleHandler
         (new Colors());
         $ar[0]=='icetea' or die("\nError verify icetea file !\n");
         count($ar)==1 and $this->info();
+        unset($ar[0]);
+        $ar = implode(' ', $ar);
         $this->handler = new ActionHandler($ar);
         $this->action = $this->handler->run();
     }
