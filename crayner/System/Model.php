@@ -1,5 +1,6 @@
 <?php
 namespace System;
+
 use System\CraynerCore;
 use System\ConfigHandler;
 

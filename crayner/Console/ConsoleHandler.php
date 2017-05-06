@@ -1,6 +1,8 @@
 <?php
 namespace Console;
+
 use Console\ActionHandler;
+
 class ConsoleHandler
 {
     public function __construct($ar)
@@ -12,7 +14,6 @@ class ConsoleHandler
     }
     private function info()
     {
-        
         die;
     }
     public function run()
