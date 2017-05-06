@@ -34,7 +34,7 @@ class Controller extends CraynerCore
     private function autoload($autoload)
     {
     }
-    public function view($view, $___)
+    public function view($view, $___=array())
     {
         foreach ($___ as $____ => $__) {
             $$____ = $__;
