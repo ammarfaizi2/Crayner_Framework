@@ -2,8 +2,8 @@
 namespace System;
 
 use System\Crayner_Core;
-use System\URI_Segment;
-use System\Config_Handler;
+use System\URISegment;
+use System\ConfigHandler;
 
 /**
 *
@@ -21,17 +21,17 @@ class Crayner extends CraynerCore
         /**
         * Ambil REQUEST_URI (array)
         */
-        $this->uri = URI_Segment::getUriSegments(Config_Handler::iq()->router());
+        $this->uri = URISegment::getURISegments(ConfigHandler::iq()->router());
         
         /**
         * Ambil Segment URI [1] (class)
         */
-        $this->class = trim(URI_Segment::getUriSegment(1, $this->uri));
+        $this->class = trim(URISegment::getURISegment(1, $this->uri));
         
         /**
         * Ambil Segment URI [2] (method)
         */
-        $this->method = trim(URI_Segment::getUriSegment(2, $this->uri));
+        $this->method = trim(URISegment::getURISegment(2, $this->uri));
         
         /**
         * Index

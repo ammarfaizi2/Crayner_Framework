@@ -11,8 +11,6 @@ class index extends Controller
     }
     public function index()
     {
-        #	header('content-type:text/plain');
-        $this->load->helper('assets');
-        css(11);
+        print 'hello';
     }
 }

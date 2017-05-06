@@ -1,5 +1,5 @@
 #!/usr/bin/env php
 <?php
-require __DIR__.'/crayner/loader.php';
-use Console\Console_Handler;
-(new Console_Handler($argv))->run();
+require __DIR__.'/vendor/autoload.php';
+use Console\ConsoleHandler;
+(new ConsoleHandler($argv))->run();

@@ -2,7 +2,7 @@
 namespace System;
 
 use System\CraynerCore;
-use System\Config_Handler;
+use System\ConfigHandler;
 
 /**
 *
@@ -17,7 +17,7 @@ class Controller extends CraynerCore
         /**
         * Autoload
         */
-        $this->autoload(Config_Handler::iq()->autoload());
+        $this->autoload(ConfigHandler::iq()->autoload());
         
         /**
         *		Loader
