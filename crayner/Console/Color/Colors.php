@@ -37,7 +37,7 @@ class Colors
     }
 
     // Returns colored string
-    public function getColoredString($string, $foreground_color = null, $background_color = null)
+    public function strclr($string, $foreground_color = null, $background_color = null)
     {
         $colored_string = "";
 

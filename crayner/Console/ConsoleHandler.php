@@ -9,7 +9,7 @@ class ConsoleHandler
 {
     public function __construct($ar)
     {
-        $this->clr = new Colors();
+        (new Colors());
         $ar[0]=='icetea' or die("\nError verify icetea file !\n");
         count($ar)==1 and $this->info();
         $this->handler = new ActionHandler($ar);
